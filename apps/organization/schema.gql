@@ -1,0 +1,29 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Organization {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Query {
+  organization(id: Int!): Organization!
+}
+
+type Mutation {
+  createOrganization(createOrganizationInput: CreateOrganizationInput!): Organization!
+  updateOrganization(updateOrganizationInput: UpdateOrganizationInput!): Organization!
+  removeOrganization(id: Int!): Organization!
+}
+
+input CreateOrganizationInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateOrganizationInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
