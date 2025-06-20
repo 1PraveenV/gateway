@@ -3,6 +3,7 @@
 # ------------------------------------------------------
 
 type Audit {
+  id: Int!
   """Example field (placeholder)"""
   exampleField: Int!
 }
