@@ -11,6 +11,7 @@ import { Module, Global } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { Project } from '../../../apps/project/src/entities/project.entity';
+import { Audit } from '../../../apps/audit/src/entities/audit.entity';
 
 @Global()
 @Module({
@@ -23,7 +24,7 @@ import { Project } from '../../../apps/project/src/entities/project.entity';
         url: configService.get<string>('MONGODB_URI'),
         database: configService.get<string>('MONGODB_DATABASE'),
         // entities: [__dirname + '/../**/*.entity{.ts,js}'],
-        entities: [Project], 
+        entities: [Project, Audit],
         synchronize: true, // disable in production
         useUnifiedTopology: true,
         useNewUrlParser: true,
