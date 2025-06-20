@@ -3,11 +3,13 @@
 # ------------------------------------------------------
 
 type Audit {
+  id: Int!
   """Example field (placeholder)"""
   exampleField: Int!
 }
 
 type Query {
+  audits: [Audit!]!
   audit(id: Int!): Audit!
 }
 

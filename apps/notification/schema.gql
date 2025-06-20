@@ -8,6 +8,7 @@ type Notification {
 }
 
 type Query {
+  notifications: [Notification!]!
   notification(id: Int!): Notification!
 }
 

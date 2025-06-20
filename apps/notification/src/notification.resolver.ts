@@ -13,7 +13,7 @@ export class NotificationResolver {
     return this.notificationService.create(createNotificationInput);
   }
 
-  @Query(() => [Notification], { name: 'notification' })
+  @Query(() => [Notification], { name: 'notifications' })
   findAll() {
     return this.notificationService.findAll();
   }

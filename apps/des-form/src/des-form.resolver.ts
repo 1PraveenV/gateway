@@ -13,7 +13,7 @@ export class DesFormResolver {
     return this.desFormService.create(createDesFormInput);
   }
 
-  @Query(() => [DesForm], { name: 'desForm' })
+  @Query(() => [DesForm], { name: 'desForms' })
   findAll() {
     return this.desFormService.findAll();
   }
