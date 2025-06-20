@@ -13,7 +13,7 @@ export class OrganizationResolver {
     return this.organizationService.create(createOrganizationInput);
   }
 
-  @Query(() => [Organization], { name: 'organization' })
+  @Query(() => [Organization], { name: 'organizations' })
   findAll() {
     return this.organizationService.findAll();
   }

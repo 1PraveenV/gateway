@@ -8,6 +8,7 @@ type DesForm {
 }
 
 type Query {
+  desForms: [DesForm!]!
   desForm(id: Int!): DesForm!
 }
 

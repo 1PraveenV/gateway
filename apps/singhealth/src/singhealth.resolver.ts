@@ -13,7 +13,7 @@ export class SinghealthResolver {
     return this.singhealthService.create(createSinghealthInput);
   }
 
-  @Query(() => [Singhealth], { name: 'singhealth' })
+  @Query(() => [Singhealth], { name: 'singhealths' })
   findAll() {
     return this.singhealthService.findAll();
   }
