@@ -8,6 +8,7 @@ type Singhealth {
 }
 
 type Query {
+  singhealths: [Singhealth!]!
   singhealth(id: Int!): Singhealth!
 }
 

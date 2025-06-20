@@ -8,6 +8,7 @@ type Audit {
 }
 
 type Query {
+  audits: [Audit!]!
   audit(id: Int!): Audit!
 }
 

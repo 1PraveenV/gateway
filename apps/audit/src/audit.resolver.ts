@@ -13,7 +13,7 @@ export class AuditResolver {
     return this.auditService.create(createAuditInput);
   }
 
-  @Query(() => [Audit], { name: 'audit' })
+  @Query(() => [Audit], { name: 'audits' })
   findAll() {
     return this.auditService.findAll();
   }

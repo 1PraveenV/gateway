@@ -8,6 +8,7 @@ type Organization {
 }
 
 type Query {
+  organizations: [Organization!]!
   organization(id: Int!): Organization!
 }
 
